@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+}
+
+body{
+    background-color: #e2d7b1;
+}
+
+/*Home page background styling*/
+.video-container {	
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #333;
+}
+
+.video-container video{
+    height:100vh;
+    width:100%;
+    background-position:absolute;
+    z-index:10;
+    object-fit:cover;
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+/*Home page heading styling*/
+.text-container{
+    position: absolute;
+    top: 78%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-size: 2em;
+    line-height: 0.75;
+    word-spacing: 2.5px;
+}
+
+.text-container h6, h1{
+    font-family: "Kode Mono", monospace;
+    width: 21ch;
+    white-space: nowrap;
+    animation: typing 6s steps(200, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+/*Planet section styling*/
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper button{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    background-color: #e2d7b1;
+    border: #e2d7b1;
+    position: fixed;
+}
+
+#button i {
+    transition: transform 0.3s ease;
+}
+  
+#button:hover i {
+    transform: scale(1.2);
+}
+
+.wrapper h2{
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    justify-content: flex-start;
+    font-size: 4rem;
+}
+
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 5220px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Kode Mono", monospace;
+}
+
+.custom-link {
+    color: #e2d7b1;
+    font-size: 13px; 
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.custom-link:hover {
+    color: rgb(120, 159, 185); 
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"]{
+    background-image: url('./images/mercury.jpeg');
+}
+
+.card[for="c2"]{
+    background-image: url('./images/venus.jpg');
+}
+
+.card[for="c3"]{
+    background-image: url('./images/earth.jpg');
+}
+
+.card[for="c4"]{
+    background-image: url('./images/mars.jpg');
+}
+
+.card[for="c5"]{
+    background-image: url('./images/jupiter.jpg');
+}
+
+.card[for="c6"]{
+    background-image: url('./images/saturn.jpg');
+}
+
+.card[for="c7"]{
+    background-image: url('./images/uranus.jpg');
+}
+
+.card[for="c8"]{
+    background-image: url('./images/neptune.jpg');
+}
+
+/*Planet Details, Sun, Moon and Space Travel background styling*/
+.sun, .moon, .stravel, .info{
+    background-color: #000000;
+    background-image: url(images/437cb739d14912acd84d65ee853b9067.gif);
+    color: #e2d7b1;
+}
+
+.head{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Back button styling*/
+.head button{
+    color: #e2d7b1;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    background-color: black;
+    border: black;
+    position: fixed;
+}
+
+#button i {
+    transition: transform 0.3s ease;
+}
+  
+#button:hover i {
+    transform: scale(1.2);
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+/*Main headings styling*/
+.head h2{
+    width: 21ch;
+    white-space: nowrap;
+    animation: typing 6s steps(200, end), blink-caret 0.5s step-end infinite alternate;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    justify-content: flex-start;
+    font-size: 4rem;
+}
+
+/*Sun section content styling*/
+.content {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content h3{
+    position: absolute;
+    top: 23%;
+    left: 64.5%;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+}
+
+.text-img{
+    display: flex;
+    align-items: right;
+    margin-top: 70px;
+    margin-right: 250px;
+}
+
+.text-img p{
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+.text-img img{
+    margin-right: 35px;
+    margin-top: 35px;
+}
+
+.sun .secondp{
+    margin-top: -70px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.sun .secondp p{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: justify;
+}
+
+/*Moon section content styling*/
+.moons .mooninfo{
+    margin-top: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.moons .mooninfo p{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: justify;
+}
+
+.moons .mooninfo .moonimages{
+    display: flex;
+}
+
+/*Planet Details section content styling*/
+.plnt{
+    margin-top: -500px;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.plnt h4{
+    font-family: "Kode Mono", monospace;
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.plnt .underline{
+    border-bottom: 2px dashed #e2d7b1; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.plnt .left{
+    display: flex;
+    align-items: left;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 90px;
+}
+
+.plnt .left p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-top: 95px;
+}
+
+.plnt .left img{
+    margin-left: 90px;
+    margin-top: 0px;
+}
+
+.plnt .right{
+    display: flex;
+    align-items: right;
+    margin-top: 30px;
+    margin-right: 90px;
+    margin-left: 100px;
+}
+
+.plnt .right p{
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    margin-top: 95px;
+}
+
+.plnt .right img{
+    margin-right: 90px;
+    margin-top: 0px;
+}
+
+/*Top button styling*/
+.up{
+    display: none;
+    color: #e2d7b1;
+    font-size: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right:50px;
+    text-align: center;
+    align-items: center;
+}
+
+.up:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/*
+.top{
+    display: none;
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right:50px;
+    text-align: center;
+    align-items: center;
+}
+
+.top:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}*/
+
+.show{
+    display: block;
+}
+
+/*Explore/Blog section styling*/
+.blog{
+    box-sizing: border-box;
+}
+
+.blog a{
+    font-family: "Kode Mono", monospace;
+    text-decoration: none;
+    color: black;
+}
+
+.blog a:hover{
+    cursor: pointer;
+    color: #c7b77c;
+}
+/*
+.blog ul{
+    list-style: none;
+}*/
+
+.blog body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 380px;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+    width: 350px;
+    height: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text .blog-title h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+
+.blog-text h4:hover{
+    color: #e2d7b1;
+    transition: all ease 0.3s;
+}
+
+.blog-text p{
+    color: #656565;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    /*-webkit-line-clamp: 3; /* kaç satır gözükeceğini belirle*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Blog content sections styling*/
+.blog1{
+    margin-top: -600px;
+    margin-right: 145px;
+    margin-left: 145px;
+    align-items: center;
+    text-align: justify;
+}
+
+.blog1 p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.blog1 h4{
+    margin-top: 30px;
+}
+
+.blog1 a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #e2d7b1;
+}
+
+.blog1 a:hover{
+    color: white;
+}
+
+/*Space Travel section styling*/
+.spacet .sttext {
+    display: flex;
+    align-items: left;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.spacet .sttext p {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.spacet .sttext img {
+    margin-right: 200px;
+    margin-top: -30px;
+    animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px); /* Resmin ne kadar yukarı aşağı hareket edeceğini ayarlayın */
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/3389093.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Planet Details Section-->
+    <section class="info" id="info">
+        <div class="planetdetail">
+            <div class="head">
+                <h2>PLANETS</h2>
+                <!--Back Button-->
+                <button id="button" onclick="myFunction()"><i class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="info">
+                <div class="plnt">
+                    <h4 class="underline" id="mercury" style="scroll-margin-top: 245px;">MERCURY</h4>
+                    <div class="left">
+                        <p><br>Mercury—the smallest planet in our solar system and nearest to the Sun—is only slightly larger than 
+                            Earth's Moon. Its surface is covered in tens of thousands of impact craters.
+                            Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system.
+                            But Mercury is the fastest planet, zipping around the Sun every 88 Earth days.
+                        </p>
+                        <img src="images/n8K.gif" alt="Mercury" width="400" height="400"/>
+                    </div>
+                
+                    <h4 class="underline" id="venus" style="scroll-margin-top: 100px;">VENUS</h4>
+                    <div class="right">
+                        <img src="images/Spinning_Venus.gif" alt="Venus" width="400" height="400"/>
+                        <p><br>Although Venus is not the closest planet to the Sun, it is the hottest planet. This is because 
+                            it has an atmosphere containing intense greenhouse gases. Venus is a very active planet, with mountains 
+                            and volcanoes on its surface. The dimensions of Venus are very close to the Earth. An important feature 
+                            that distinguishes Venus from other planets is that it rotates around itself in the opposite direction 
+                            of the Earth and many other planets. Therefore, the sun rises from the west, sets from the east.
+                        </p>
+                    </div>
+
+                    <h4 class="underline" id="earth" style="scroll-margin-top: 100px;">EARTH</h4>
+                    <div class="left">
+                        <p><br>The Earth has a solid crust, a surface that includes active volcanoes, mountains, valleys, canyons, 
+                            plains and many other landforms. Earth is special because it is an ocean planet. About 70% of its surface 
+                            is made up of oceans and seas. Its atmosphere consists mostly of nitrogen and contains a lot of oxygen for 
+                            us to breathe. In addition, its atmosphere protects us from meteorites, meteors entering our atmosphere 
+                            disintegrate and then reach the earth's surface.
+                        </p>
+                        <img src="images/TUOk.gif" alt="Earth" width="400" height="400"/>
+                    </div>
+
+                    <h4 class="underline" id="mars" style="scroll-margin-top: 100px;">MARS</h4>
+                    <div class="right">
+                        <img src="images/DPvp.gif" alt="Mars" width="400" height="400"/>
+                        <p><br>Mars is a cold desert planet that is half the size of Earth. It looks red because of the iron in its 
+                            soil. For this reason, it is also called the ”Red Planet". Like Earth, Mars has seasons, poles, volcanoes, 
+                            canyons and weather events. The atmosphere is very thin. It consists of carbon dioxide, nitrogen and argon.
+                            Currently, water exists on Mars only in sparse clouds and icy soil. A day on Mars lasts 24.6 hours.
+                        </p>
+                    </div>
+
+                    <h4 class="underline" id="jupiter" style="scroll-margin-top: 100px;">JUPITER</h4>
+                    <div class="left">
+                        <p><br>Jupiter is the largest planet in our Solar System. Its atmosphere is covered with swirling cloud streaks.
+                            In the place called the ”Great Red Spot", there are storms that have been going on for hundreds of years. 
+                            Jupiter is a gas giant, so it does not have a solid surface. It is thought that there is an Earth-sized 
+                            solid core at its center. Jupiter also has rings, but they are too pale to be seen by the eye.
+                        </p>
+                        <img src="images/WME4.gif" alt="Jupiter" width="400" height="400"/>
+                    </div>
+
+                    <h4 class="underline" id="saturn" style="scroll-margin-top: 100px;">SATURN</h4>
+                    <div class="right">
+                        <img src="images/vO04Ex.gif" alt="Saturn" width="400" height="400"/>
+                        <p><br>Saturn is a gas giant just like Jupiter and consists mostly of hydrogen and helium. It has an intense 
+                            atmosphere. Saturn is famous because of its rings. This ringed planet has 7 rings with gaps between them.
+                            These rings are made up of pieces of ice and rock.
+                        </p>
+                    </div>
+
+                    <h4 class="underline" id="uranus" style="scroll-margin-top: 100px;">URANUS</h4>
+                    <div class="left">
+                        <p><br>Uranus consists of water, methane and ammonia liquids above its small rocky center. Its atmosphere is 
+                            composed of hydrogen and helium, as on Jupiter and Saturn. It also contains methane. The substance that 
+                            gives Uranus its blue color is methane. Uranus has also pale rings. Uranus, an ice giant, is the only 
+                            planet that rotates sideways. And it also turns from east to west.
+                        </p>
+                        <img src="images/79fe170383f8601eaa94fdf0fc32ced9.gif" alt="Uranus" width="400" height="400"/>
+                    </div>
+
+                    <h4 class="underline" id="neptune" style="scroll-margin-top: 100px;">NEPTUNE</h4>
+                    <div class="right">
+                        <img src="images/Neptune.gif" alt="Neptune" width="400" height="400"/>
+                        <p><br>Neptune, the last planet in our Solar System, is dark, cold and very windy. Neptune, an ice giant like 
+                            Uranus, consists of dense water vapor, ammonia and methane gas on top of a solid center that is the same 
+                            size as the Earth. Its atmosphere consists of hydrogen, helium and methane. Just like Uranus, it is methane 
+                            that gives Neptune its blue color. Neptune has 6 rings, but they are very difficult to see.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Back Button-->
+    <script>
+        document.querySelector("#button").onclick=function(){
+            window.location.href="index2.html"
+        }
+    </script>  
+
+    <!--Top Button-->
+    <a class="up">&#8673;</a>
+    <script src="script.js"></script>
+</body>
+</html>
